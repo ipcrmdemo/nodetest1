@@ -1,0 +1,31 @@
+{
+  "name": "nodetest1",
+  "version": "0.1.0",
+  "description": "my new project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipcrmdemo/nodetest1.git"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc --project .",
+    "start": "npm run serve",
+    "serve": "node dist/server.js",
+    "watch-node": "nodemon dist/server.js",
+    "watch-ts": "tsc -w"
+  },
+  "author": "matt",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "express": "^4.16.3"
+  },
+  "homepage": "https://github.com/ipcrmdemo/nodetest1#readme",
+  "bugs": {
+    "url": "https://github.com/ipcrmdemo/nodetest1/issues"
+  }
+}
